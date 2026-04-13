@@ -6,34 +6,25 @@ package Modelo;
 
 
 public abstract class Figura {
-    protected double x;
-    protected double y;
-
-    public Figura(double x, double y) {
-        this.x = x;
-        this.y = y;
+    protected Punto posicion;
+    public Figura(Punto posicion){
+        this.posicion = posicion;
     }
     public abstract double calcularArea();
 
-    public double getX() {
-        return x;
+    public Punto getPosicion() {
+        return posicion;
     }
 
-    public void setX(double x) {
-        this.x = x;
+    public void setPosicion(Punto posicion) {
+        this.posicion = posicion;
     }
-
-    public double getY() {
-        return y;
-    }
-
-    public void setY(double y) {
-        this.y = y;
-    }
+    
+    
 
     @Override
     public String toString() {
-        return "Posicion: ("+ x +", "+ y +")"; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        return "Posicion: "+posicion.toString(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }
     
     
