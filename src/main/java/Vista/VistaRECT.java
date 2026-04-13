@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import Controlador.ControladroREC;
+
 /**
  *
  * @author crstc
@@ -13,6 +15,8 @@ public class VistaRECT extends javax.swing.JFrame {
     /**
      * Creates new form VistaRECT
      */
+    private ControladroREC controlador = new ControladroREC();
+
     public VistaRECT() {
         initComponents();
     }
@@ -56,7 +60,6 @@ public class VistaRECT extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         txtResultado = new javax.swing.JLabel();
-        txtResultadfo = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -259,35 +262,35 @@ public class VistaRECT extends javax.swing.JFrame {
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addGap(3, 3, 3)
-                                        .addComponent(txtEscala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(BtnEscala))
+                                        .addComponent(txtEscala, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtUnidades, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(txtUnidades)))
+                                .addGap(30, 30, 30)
+                                .addComponent(BtnEscala))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(txtPunto, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(btnPuntoX, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtPuntoX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnPuntoX, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtPuntoX, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnPuntoY, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnPuntoY, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(156, 156, 156)
                                 .addComponent(btnArea)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtPuntoY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtPuntoY, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(156, 156, 156)
                         .addComponent(btnContiene)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(98, 98, 98))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -319,39 +322,23 @@ public class VistaRECT extends javax.swing.JFrame {
                 .addGap(63, 63, 63))
         );
 
-        txtResultado.setText("Resultado:");
-
-        txtResultadfo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtResultadfoActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtResultadfo, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 9, Short.MAX_VALUE)))
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtResultadfo, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(27, 27, 27))
+                .addGap(146, 146, 146)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        txtResultado.setText("Resultado:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -369,7 +356,10 @@ public class VistaRECT extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -380,9 +370,11 @@ public class VistaRECT extends javax.swing.JFrame {
                 .addComponent(Panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         pack();
@@ -390,34 +382,53 @@ public class VistaRECT extends javax.swing.JFrame {
 
     private void txtX1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtX1ActionPerformed
         // TODO add your handling code here:
+
     }//GEN-LAST:event_txtX1ActionPerformed
 
     private void txtY1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtY1ActionPerformed
         // TODO add your handling code here:
+        txtResultado.setText(controlador.calcularArea());
+
     }//GEN-LAST:event_txtY1ActionPerformed
 
     private void btnAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAreaActionPerformed
         // TODO add your handling code here:
+        txtResultado.setText(controlador.calcularArea());
+
     }//GEN-LAST:event_btnAreaActionPerformed
 
     private void BtnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCrearActionPerformed
         // TODO add your handling code here:
+        double x1 = Double.parseDouble(txtX1.getText());
+        double y1 = Double.parseDouble(txtY1.getText());
+        double x2 = Double.parseDouble(txtX2.getText());
+        double y2 = Double.parseDouble(txtY2.getText());
+        txtResultado.setText(controlador.crearRectangulo(x1, y1, x2, y2));
     }//GEN-LAST:event_BtnCrearActionPerformed
 
     private void BtnEscalaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEscalaActionPerformed
         // TODO add your handling code here:
+        double escala = Double.parseDouble(txtEscala.getText());
+        txtResultado.setText(controlador.aplicarEscala(escala));
     }//GEN-LAST:event_BtnEscalaActionPerformed
 
     private void btnMoverHorizontalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMoverHorizontalActionPerformed
         // TODO add your handling code here:
+        double unidades = Double.parseDouble(txtUnidades.getText());
+        txtResultado.setText(controlador.moverHorizontal(unidades));
     }//GEN-LAST:event_btnMoverHorizontalActionPerformed
 
     private void btnMoverVerticalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMoverVerticalActionPerformed
         // TODO add your handling code here:
+        double unidades = Double.parseDouble(txtUnidades.getText());
+        txtResultado.setText(controlador.moverVertical(unidades));
     }//GEN-LAST:event_btnMoverVerticalActionPerformed
 
     private void btnContieneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContieneActionPerformed
         // TODO add your handling code here:
+        double x = Double.parseDouble(txtPuntoX.getText());
+        double y = Double.parseDouble(txtPuntoY.getText());
+        txtResultado.setText(controlador.contienePunto(x, y));
     }//GEN-LAST:event_btnContieneActionPerformed
 
     private void txtX2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtX2ActionPerformed
@@ -443,10 +454,6 @@ public class VistaRECT extends javax.swing.JFrame {
     private void txtPuntoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPuntoYActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPuntoYActionPerformed
-
-    private void txtResultadfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtResultadfoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtResultadfoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -508,7 +515,6 @@ public class VistaRECT extends javax.swing.JFrame {
     private javax.swing.JLabel txtPunto;
     private javax.swing.JTextField txtPuntoX;
     private javax.swing.JTextField txtPuntoY;
-    private javax.swing.JTextField txtResultadfo;
     private javax.swing.JLabel txtResultado;
     private javax.swing.JTextField txtUnidades;
     private javax.swing.JTextField txtX1;
